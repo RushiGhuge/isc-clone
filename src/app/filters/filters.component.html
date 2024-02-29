@@ -1,0 +1,30 @@
+<div class="flex w-full py-6">
+
+    <div class="w-1/2 flex  gap-4">
+        <!-- array of Filter data -->
+        @if(filters.length > 0){
+        <span>Filters: </span>
+        <div class="flex gap-1 flex-wrap">
+            @for (item of filters; track $index) {
+            <div class="border-2 rounded-md bg-white text-black py-0 px-3 flex gap-2 items-center h-7 hover:bg-slate-200">
+                <span>{{item}}</span>
+                <button (click)="removeFilter($index)">
+                    <mat-icon class="text-lg" aria-hidden="false" aria-label="Example home icon"
+                        fontIcon="close"></mat-icon>
+                </button>
+            </div>
+            }
+        </div>
+        <button (click)="removeAllFilters()"  class="w-20 self-start underline hover:text-slate-900">Clear all</button>
+        }
+    </div>
+
+    <div class="w-1/2 flex justify-end items-start">
+        <mat-button-toggle-group appearance="legacy" name="fontStyle" aria-label="Font Style">
+            <mat-button-toggle class="p-0" checked="true" value="BestRank">Best Rank</mat-button-toggle>
+            <mat-button-toggle class="" value="AcceptanceRate">Acceptance Rate</mat-button-toggle>
+            <mat-button-toggle class="" value="TuitionFee">Tuition Fee</mat-button-toggle>
+            <mat-button-toggle class="" value="BestMatch">Best Match</mat-button-toggle>
+        </mat-button-toggle-group>
+    </div>
+</div>

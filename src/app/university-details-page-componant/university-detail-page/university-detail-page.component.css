@@ -1,0 +1,16 @@
+.home-container{
+    width: 100%;
+    height: 80vh;
+    background-image:linear-gradient(89.25deg, rgb(4, 15, 36) 12.24%, rgba(4, 15, 36, 0) 95.95%), url("https://stage-cdn.ischoolconnect.com/iSchoolConnect/b2c/images/defaultBackground.png");
+    background-position:center right;
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: rgb(226, 226, 226)
+}
+
+.bg-img{
+    background-image: url('https://stage-cdn.ischoolconnect.com/iSchoolConnect/b2c/images/Rank.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}

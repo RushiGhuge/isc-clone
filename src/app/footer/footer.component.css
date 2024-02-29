@@ -1,0 +1,14 @@
+.footer-bottom{
+    background: #161c2d;
+}
+
+.footer-bg{
+    background: #0e2446;
+}
+a{
+    transition: 0.5s;
+}
+a:hover{
+    color: white;
+    text-decoration: underline;
+}

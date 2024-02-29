@@ -1,0 +1,49 @@
+<main class="p-6 px-20 w-full bg-slate-100 text-slate-500 text-sm">
+
+
+    <section class="flex flex-col gap-4">
+        <ul class="flex gap-2">
+            <li><a class="hover:underline" href="#"><mat-icon style="font-size: 18px">home</mat-icon></a></li>
+            <mat-icon style="font-size: 14px;" class="pt-0.5">arrow_forward_ios</mat-icon>
+            <li><a class="hover:underline" href="#">Explore Schools</a></li>
+        </ul>
+        <input class="w-full p-2 border" (input)="onSearch($event)" type="text"
+            placeholder="Search for  an Institute or a Course">
+        <h3 class="text-slate-900">You found <span class=" text-lg underline"> {{universityArray.length.toLocaleString()}}
+            </span> institutes and <span class=" text-lg underline"> {{(universityArray.length * 3).toLocaleString()}}
+            </span> courses</h3>
+        <hr>
+    </section>
+
+
+    <section class="">
+        <app-filters></app-filters>
+        <hr>
+    </section>
+
+    <!-- main section -->
+    <section class="flex gap-6 w-full py-8">
+        <div class="w-80">
+            <app-sorting-data></app-sorting-data>
+        </div>
+
+        <div class="w-full flex flex-col gap-8">
+
+            @if(universityArray.length < 1){
+                <h1 class="text-center mt-20 text-3xl">No Data Found 🤔</h1>
+            }
+
+            @for (item of currentList; track $index) {
+
+            <app-university-card [data]="item"></app-university-card>
+
+            }
+
+            @if(universityArray.length > 5){
+            <mat-paginator (page)="onPageChange($event)" [length]="universityArray.length" [pageSize]="10"
+                [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page">
+            </mat-paginator>
+            }
+        </div>
+    </section>
+</main>

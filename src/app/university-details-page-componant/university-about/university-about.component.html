@@ -1,0 +1,413 @@
+<!-- navigation section -->
+<nav class=' sticky top-16 bg-white'>
+    <ul #navButtons  class="flex gap-10 px-8  w-full shadow-md">
+        <li><button class="py-2" (click)="scrollToSection(about, $event)">About</button></li>
+        <li><button class="py-2" (click)="scrollToSection(highlights, $event)">Highlights</button></li>
+        <!-- <li><button class="py-2" (click)="scrollToSection()">Admission</button></li> -->
+        <li><button class="py-2" (click)="scrollToSection(trending, $event)">Courses</button></li>
+        <li><button class="py-2" (click)="scrollToSection(fee, $event)">Fees</button></li>
+        <!-- <li><button class="py-2" (click)="scrollToSection()">Additional Details.</button></li> -->
+    </ul>
+</nav>
+
+
+
+<section class="grid grid-cols-3 w-full p-6 gap-6 bg-slate-200 text-base text-slate-700">
+
+    <div #about class="bg-white rounded-md shadow-md p-6 col-span-2 row-span-2 flex flex-col gap-3">
+        <h1 class="text-sky-500 text-2xl">About</h1>
+
+        <p>Established in 1636, Harvard University is a prestigious university located in Cambridge, Massachusetts. The
+            university is ranked #5 in the QS World University Rankings 2023, and #2 in THE World Rankings 2023. The
+            university's motto is "Veritas" which means "Truth" in Latin.</p>
+        <p>Harvard University offers 50 undergraduate programs and 135 postgraduate programs. Home to 22% of
+            international students, Harvard has a total student population of 22,361. It has over 371,000 alumni spread
+            across the globe. More than 20,000 staff and faculties, 13 schools and institutes, and countless aspiring
+            students have contributed to making Harvard a modern-day giant in the field of education and research! The
+            acceptance rate for Harvard is 4.6%. </p>
+        <p>Harvard is built around an inclusive culture focusing on diversity, inclusion, and equitable learning
+            opportunities. Its network of like-minded individuals who can support each other no matter where they are
+            has helped make the world a much better place to live in.</p>
+
+        <h2 class="text-2xl text-black">Accolades</h2>
+        <p>Harvard University has consistently been ranked among the top universities in the world by various ranking
+            organizations such as QS, THE, and US News and World Rankings. Here are some recent rankings and factors:
+        </p>
+        <ul class="pl-6">
+            <li class="list-disc">Harvard University has been ranked <b>"#5"</b> in <b>"Graduate Employability"</b> by
+                <b>"QS World
+                    Rankings 2023"</b>
+            </li>
+            <li class="list-disc">It is also ranked <b>"#1"</b> in US Rankings by <b>THE World Rankings 2023</b></li>
+            <li class="list-disc">The University is also ranked <b>"#1"</b> in <b>"Best Global Universities"</b> by
+                <b>"US News and World
+                    Reports"</b>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="bg-white rounded-md shadow-md p-6 flex flex-col gap-3">
+        <h1 class="text-2xl">Confused which university to choose?</h1>
+        <p class="text-slate-600">Use our recommendation engine to analyze your profile and recommend the most desirable
+            programs that fit you.</p>
+        <button class="bg-sky-400 p-2 rounded-md text-white">Get Recommendation</button>
+    </div>
+
+    <div class="bg-white rounded-md shadow-md p-6 ">
+        <h1 class="text-sky-500 text-xl">Similar Universities</h1>
+        <ul class="mt-2 flex flex-col gap-2">
+            <li>
+                <div>
+                    <div class="flex gap-4 items-center border-b py-1">
+                        <img class="w-8" src="https://cdn.ischoolconnect.com/logo/1313.png" alt="">
+                        <div class="flex flex-col">
+                            <b>Harvard University</b>
+                            <span class="text-sm">Cambridge USA</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div>
+                    <div class="flex gap-4 items-center border-b py-1">
+                        <img class="w-8"
+                            src="https://cdn.ischoolconnect.com/iSchoolConnect/b2c/images/top_universities/oxford.png"
+                            alt="">
+                        <div class="flex flex-col">
+                            <b>Oxford University</b>
+                            <span class="text-sm">Cambridge USA</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div>
+                    <div class="flex gap-4 items-center border-b py-1">
+                        <img class="w-8"
+                            src="https://cdn.ischoolconnect.com/iSchoolConnect/b2c/images/top_universities/stanford.png"
+                            alt="">
+                        <div class="flex flex-col">
+                            <b>Stanford University</b>
+                            <span class="text-sm">Cambridge USA</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div>
+                    <div class="flex gap-4 items-center border-b py-1">
+                        <img class="w-8"
+                            src="https://cdn.ischoolconnect.com/iSchoolConnect/b2c/images/top_universities/toronto.png"
+                            alt="">
+                        <div class="flex flex-col">
+                            <b>University of Toronto</b>
+                            <span class="text-sm">Cambridge USA</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div>
+                    <div class="flex gap-4 items-center py-1">
+                        <img class="w-8"
+                            src="https://cdn.ischoolconnect.com/iSchoolConnect/b2c/images/top_universities/cambridge.png"
+                            alt="">
+                        <div class="flex flex-col">
+                            <b>Cambridge University</b>
+                            <span class="text-sm">Cambridge USA</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div #highlights class="bg-white rounded-md shadow-md p-6 flex flex-col gap-4 col-span-2">
+        <h1 class="text-2xl text-black">Highlights</h1>
+        <p>Harvard University is one of the world's most prestigious universities. Here are some highlights about the
+            university:</p>
+
+        <div class="grid grid-cols-3 ">
+
+            <div class="border-b  p-4 border-r">
+                <p>Total Students</p>
+                <b>21887</b>
+            </div>
+
+            <div class="border-b  p-4 border-r">
+                <p>Avg. Earnings After Graduation</p>
+                <b>200000 USD
+                    (annually)</b>
+            </div>
+
+            <div class="border-b  p-4">
+                <p>Graduation Rate</p>
+                <b>90%</b>
+            </div>
+
+            <div class="border-b  p-4 border-r flex flex-col gap-1">
+                <p>International Students</p>
+                <div class="flex w-full">
+                    <div class="bg-sky-500 w-1/4 h-1"></div>
+                    <div class="bg-blue-800 w-3/4 h-1"></div>
+                </div>
+                <div class="flex justify-between">
+                    <div class="flex items-center gap-3">
+                        <img src="https://cdn.ischoolconnect.com/iSchoolConnect/b2c/images/university-profile/student-dark-blue.svg"
+                            alt="">
+                        <div>
+                            <p>International</p>
+                            <b>25%</b>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="flex items-center gap-3">
+                            <img src="https://cdn.ischoolconnect.com/iSchoolConnect/b2c/images/university-profile/student-skyblue.svg"
+                                alt="">
+                            <div>
+                                <p>National</p>
+                                <b>75%</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="border-b  p-4 border-r flex flex-col gap-1">
+                <p>Student Gender Distribution</p>
+
+                <div class="flex w-full">
+                    <div class="bg-sky-500 w-1/2 h-1"></div>
+                    <div class="bg-blue-800 w-1/2 h-1"></div>
+                </div>
+                <div class="flex justify-between">
+                    <div class="flex items-center gap-3">
+                        <img src="https://cdn.ischoolconnect.com/iSchoolConnect/b2c/images/university-profile/male.svg"
+                            alt="">
+                        <div>
+                            <p>Male</p>
+                            <b>50%</b>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="flex items-center gap-3">
+                            <img src="https://cdn.ischoolconnect.com/iSchoolConnect/b2c/images/university-profile/female.svg"
+                                alt="">
+                            <div>
+                                <p>Female</p>
+                                <b>50%</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="border-b  p-4 flex flex-col gap-1">
+                <p>Student Faculty Ratio</p>
+
+                <div class="flex w-full">
+                    <div class="bg-sky-500 w-2/6 h-1"></div>
+                    <div class="bg-blue-800 w-2/3 h-1"></div>
+                </div>
+                <div class="flex justify-between">
+                    <div class="flex items-center gap-3">
+                        <img src="https://cdn.ischoolconnect.com/iSchoolConnect/b2c/images/university-profile/student-skyblue.svg"
+                            alt="">
+                        <div>
+                            <p>Student</p>
+                            <b>2</b>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="flex items-center gap-3">
+                            <img src="https://cdn.ischoolconnect.com/iSchoolConnect/b2c/images/university-profile/faculty.svg"
+                                alt="">
+                            <div>
+                                <p>Faculty</p>
+                                <b>3</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class=" p-2 border-r">
+                <p>Accommodation for Undergrad</p>
+                <b>Available (On-Campus)</b>
+            </div>
+
+            <div class=" p-2 border-r">
+                <p>Accommodation for Grad</p>
+                <b>Available (On-Campus)</b>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="bg-white rounded-md shadow-md p-6 flex flex-col gap-3 ">
+        <div class="flex gap-4">
+            <img src="https://cdn.ischoolconnect.com/iSchoolConnect/b2c/images/poll%201.svg" alt="">
+            <div class="flex flex-col">
+                <b class="text-sky-400">QUICK POLL</b>
+                <p class="text-sm">What is your preferred destination to study in?</p>
+            </div>
+        </div>
+
+        <div class="flex flex-col gap-3 mt-3">
+            <button class="text-sky-500 border rounded-sm border-sky-400 p-2">India</button>
+            <button class="text-sky-500 border rounded-sm border-sky-400 p-2">USA</button>
+            <button class="text-sky-500 border rounded-sm border-sky-400 p-2">Germany</button>
+            <button class="text-sky-500 border rounded-sm border-sky-400 p-2">Canada</button>
+            <button class="text-sky-500 border rounded-sm border-sky-400 p-2">Japan</button>
+
+        </div>
+    </div>
+
+    <div class="bg-indigo-950 text-white rounded-md shadow-md p-6 col-span-2 flex justify-between">
+        <h1 class="text-xl">
+            Get help with the admission process from experts
+        </h1>
+        <button class="bg-sky-400 p-2 rounded-lg px-6">Talk To Our Counsellors</button>
+    </div>
+
+
+    <div #trending class="bg-white col-span-2 rounded-md shadow-md p-6 w-full flex flex-col gap-5">
+        <div class="flex  justify-between w-full">
+            <h1>Trending Courses (2023-2024)</h1>
+            <button class="p-2 bg-sky-200 text-sky-600">Explore All Courses</button>
+        </div>
+
+        <div class="w-full mt-6">
+            <div class="flex border p-4 justify-between">
+                <div>
+                    <b>Accounting and Management</b>
+                    <p>{{data.name}}</p>
+                </div>
+                <button><mat-icon aria-hidden="false" aria-label="Fav" fontIcon="favorite_border"></mat-icon></button>
+            </div>
+
+            <div class="flex w-full justify-between items-center border p-4 border-t-0">
+                <div class="flex gap-10">
+                    <div>
+                        <b>Doctorate</b>
+                        <p>Degree</p>
+                    </div>
+                    <div>
+                        <b>5 years</b>
+                        <p>Tenure</p>
+                    </div>
+                    <div>
+                        <b>$54,269 USD</b>
+                        <p>Tuition Fee</p>
+                    </div>
+                </div>
+
+                <button class="bg-sky-400 text-white p-2 rounded-lg px-5">Apply</button>
+            </div>
+        </div>
+
+        <div class="w-full mt-6">
+            <div class="flex border p-4 justify-between">
+                <div>
+                    <b>African and African American Studies</b>
+                    <p>{{data.name}}</p>
+                </div>
+                <button><mat-icon aria-hidden="false" aria-label="Fav" fontIcon="favorite_border"></mat-icon></button>
+            </div>
+
+            <div class="flex w-full justify-between items-center border p-4 border-t-0">
+                <div class="flex gap-10">
+                    <div>
+                        <b>Doctorate</b>
+                        <p>Degree</p>
+                    </div>
+                    <div>
+                        <b>5 years</b>
+                        <p>Tenure</p>
+                    </div>
+                    <div>
+                        <b>$54,269 USD</b>
+                        <p>Tuition Fee</p>
+                    </div>
+                </div>
+
+                <button class="bg-sky-400 text-white p-2 rounded-lg px-5">Apply</button>
+            </div>
+        </div>
+
+        <div class="w-full mt-6">
+            <div class="flex border p-4 justify-between">
+                <div>
+                    <b>African and African American Studies</b>
+                    <p>{{data.name}}</p>
+                </div>
+                <button><mat-icon aria-hidden="false" aria-label="Fav" fontIcon="favorite_border"></mat-icon></button>
+            </div>
+
+            <div class="flex w-full justify-between items-center border p-4 border-t-0">
+                <div class="flex gap-10">
+                    <div>
+                        <b>Doctorate</b>
+                        <p>Degree</p>
+                    </div>
+                    <div>
+                        <b>5 years</b>
+                        <p>Tenure</p>
+                    </div>
+                    <div>
+                        <b>$54,269 USD</b>
+                        <p>Tuition Fee</p>
+                    </div>
+                </div>
+
+                <button class="bg-sky-400 text-white p-2 rounded-lg px-5">Apply</button>
+            </div>
+        </div>
+
+        <div class="w-full mt-6">
+            <div class="flex border p-4 justify-between">
+                <div>
+                    <b>African and African American Studies - African</b>
+                    <p>{{data.name}}</p>
+                </div>
+                <button><mat-icon aria-hidden="false" aria-label="Fav" fontIcon="favorite_border"></mat-icon></button>
+            </div>
+
+            <div class="flex w-full justify-between items-center border p-4 border-t-0">
+                <div class="flex gap-10">
+                    <div>
+                        <b>Doctorate</b>
+                        <p>Degree</p>
+                    </div>
+                    <div>
+                        <b>5 years</b>
+                        <p>Tenure</p>
+                    </div>
+                    <div>
+                        <b>$54,269 USD</b>
+                        <p>Tuition Fee</p>
+                    </div>
+                </div>
+
+                <button class="bg-sky-400 text-white p-2 rounded-lg px-5">Apply</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div #fee class="bg-white rounded-md shadow-md col-span-2  p-6 w-full flex  flex-col gap-5 " >
+        <app-fee-container></app-fee-container>
+    </div>
+
+</section>

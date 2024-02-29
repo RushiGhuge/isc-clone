@@ -1,0 +1,11 @@
+import { Routes } from '@angular/router';
+// import { ExploreSchoolsComponent } from './explore-schools/explore-schools.component';
+// import { NotFoundComponent } from './not-found/not-found.component';
+// import { UniversityDetailPageComponent } from './university-details-page-componant/university-detail-page/university-detail-page.component';
+
+export const routes: Routes = [
+    { path: '', loadComponent: () => import('./explore-schools/explore-schools.component').then(m => m.ExploreSchoolsComponent) },
+    { path: 'not-found', loadComponent: () => import('./not-found/not-found.component').then(m => m.NotFoundComponent) },
+    { path: 'university-page/:name', loadComponent: () => import('./university-details-page-componant/university-detail-page/university-detail-page.component').then(m => m.UniversityDetailPageComponent) },
+    { path: '**', redirectTo: 'not-found', pathMatch: 'full' }
+];

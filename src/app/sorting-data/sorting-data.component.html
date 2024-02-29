@@ -1,0 +1,75 @@
+<main class="flex flex-col gap-4 text-slate-700">
+
+    <section class="py-3">
+        <h2 class="text-xl pb-2 text-slate-800">Country</h2>
+        <div class="flex flex-col gap-1 h-56 overflow-auto pt-2">
+            @for (item of countries; track $index) {
+            <label class="flex gap-2">
+                <input [checked]="filterData.includes(item)" (change)="filterAddDelete($event)" [value]="item"
+                    type="checkbox">
+                <span>{{item}}</span>
+            </label>
+            }
+        </div>
+        <hr class="mt-3">
+    </section>
+
+    <section class="py-3">
+        <h2 class="text-xl pb-2 text-slate-800">Disciplines</h2>
+
+        <div class="flex flex-col gap-1 h-56 overflow-auto pt-2">
+            @for (item of disciplines; track $index) {
+            <label class="flex gap-2">
+                <input [checked]="filterData.includes(item)" (change)="filterAddDelete($event)" [value]="item"
+                    type="checkbox">
+                <span>{{item}}</span>
+            </label>
+            }
+        </div>
+        <hr class="mt-3">
+    </section>
+
+    <section class="py-3">
+        <h2 class="text-xl pb-2 text-slate-800">degrees</h2>
+
+        <div class="flex flex-col gap-1 h-56 overflow-auto pt-2">
+            @for (item of degrees; track $index) {
+            <label class="flex gap-2">
+                <input [checked]="filterData.includes(item)" (change)="filterAddDelete($event)" [value]="item"
+                    type="checkbox">
+                <span>{{item}}</span>
+            </label>
+            }
+        </div>
+        <hr class="mt-3">
+    </section>
+
+    <section class="py-3">
+        <h2 class="text-xl pb-2 text-slate-800">Tuition Fee</h2>
+
+        <div class="flex flex-col gap-1  overflow-auto pt-2 pb-2">
+            @for (item of tiutionFee; track $index) {
+            <label class="flex gap-2">
+                <input type="radio" (change)="filterAddDelete($event)" [value]="item" name="fee">
+                <span>{{item}}</span>
+            </label>
+            }
+        </div>
+        <hr class="mt-3">
+    </section>
+
+    <section class="py-3">
+        <h2 class="text-xl pb-2 text-slate-800">Partnership Type</h2>
+
+        <div class="flex flex-col gap-1 h-56 overflow-auto pt-2">
+            @for (item of PartnerShip; track $index) {
+            <label class="flex gap-2">
+                <input [checked]="filterData.includes(item)" (change)="filterAddDelete($event)" [value]="item"
+                    type="checkbox">
+                <span>{{item}}</span>
+            </label>
+            }
+        </div>
+        <hr class="mt-3">
+    </section>
+</main>

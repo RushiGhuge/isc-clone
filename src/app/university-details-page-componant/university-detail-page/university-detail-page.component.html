@@ -1,0 +1,93 @@
+<main>
+
+ 
+
+    <!-- home section -->
+    <section class="home-container p-6 text-slate-300">
+        <div class="flex gap-3 text-slate-100 text-sm">
+            <a class="hover:underline" href="/"><mat-icon style="font-size: 16px;">home</mat-icon></a> <mat-icon
+                style="font-size: 14px;" class="pt-0.5">arrow_forward_ios</mat-icon>
+            <a class="hover:underline" href="/">Explore Schools</a> <mat-icon style="font-size: 14px;"
+                class="pt-0.5">arrow_forward_ios</mat-icon>
+            <a class="hover:underline cursor-pointer">{{universityData.name}}</a>
+        </div>
+
+        <div class="flex flex-col mt-10 gap-5 items-start">
+            <img class="w-28 bg-white rounded-lg" src="https://cdn.ischoolconnect.com/logo/1313.png" alt="logo">
+            <div>
+                <h1 class="text-white text-2xl font-semibold">{{universityData.name}}</h1>
+                <p class="text-white text-lg flex gap-2 items-center"> <mat-icon
+                        style="font-size: 16px padding-top-4px;"> location_on</mat-icon> {{universityData.country}}</p>
+                <div class="flex gap-3">
+                    <span class="flex items-center gap-2"><mat-icon>school</mat-icon> School</span>
+                    <select class=" w-20 bg-slate-800 border p-1s" name="" id="">
+                        <option value="all">All</option>
+                    </select>
+                </div>
+            </div>
+            <button class="border text-white border-white p-2 px-10 flex items-center gap-3"> <mat-icon> call</mat-icon>
+                Talk to counsellor</button>
+        </div>
+
+        <!-- home bottom sections -->
+        <ul class="mt-10 flex gap-5 text-white">
+            <li>
+                <div class="flex gap-1">
+                    <div class="bg-img flex items-center justify-center w-10">
+                        <img class="w-8 p-2"
+                            src="https://cdn.ischoolconnect.com/iSchoolConnect/b2c/images/globalRank.svg" alt="">
+                    </div>
+                    <h1 class="text-2xl font-bold">501 <sup>st</sup></h1>
+                </div>
+                <h1>Global Rank</h1>
+            </li>
+
+            <li>
+                <div class="flex gap-1">
+                    <div class="bg-img flex items-center justify-center w-10">
+                        <img class="w-8 p-2"
+                            src="https://cdn.ischoolconnect.com/iSchoolConnect/b2c/images/regional_rank.svg" alt="">
+                    </div>
+                    <h1 class="text-2xl font-bold">8 <sup>st</sup></h1>
+                </div>
+                <h1>Global Rank</h1>
+            </li>
+
+            <li>
+                <div class="flex gap-1">
+                    <div class="bg-img flex items-center justify-center w-10">
+                        <img class="w-8 p-2" src="https://cdn.ischoolconnect.com/iSchoolConnect/b2c/images/qsRank.svg"
+                            alt="">
+                    </div>
+                    <h1 class="text-2xl font-bold">536 <sup>st</sup></h1>
+                </div>
+                <h1>Global Rank</h1>
+            </li>
+
+            <li>
+                <div class="flex gap-1">
+                    <div class="bg-img flex items-center justify-center w-10">
+                        <img class="w-8 p-2" src="https://cdn.ischoolconnect.com/iSchoolConnect/b2c/images/usRank.svg"
+                            alt="">
+                    </div>
+                    <h1 class="text-2xl font-bold">537 <sup>st</sup></h1>
+                </div>
+                <h1>Global Rank</h1>
+            </li>
+
+            <li>
+                <div class="flex gap-1">
+                    <div class="bg-img flex items-center justify-center w-10">
+                        <img class="w-8 p-2" src="https://cdn.ischoolconnect.com/iSchoolConnect/b2c/images/timeRank.svg"
+                            alt="">
+                    </div>
+                    <h1 class="text-2xl font-bold">402 <sup>st</sup></h1>
+                </div>
+                <h1>Global Rank</h1>
+            </li>
+        </ul>
+    </section>
+
+    <app-university-about [data]="universityData"></app-university-about>
+
+</main>
