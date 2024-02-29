@@ -1,12 +1,12 @@
 import { Component, ElementRef, Input, ViewChild } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { RouterLink } from '@angular/router';
-import { FeeContainerComponent } from '../fee-container/fee-container.component';
+// import { FeeContainerComponent } from './fee-container/fee-container.component';
 
 @Component({
   selector: 'app-university-about',
   standalone: true,
-  imports: [MatIconModule, RouterLink,FeeContainerComponent],
+  imports: [MatIconModule, RouterLink],
   templateUrl: './university-about.component.html',
   styleUrl: './university-about.component.css'
 })
