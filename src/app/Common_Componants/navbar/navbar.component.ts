@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { MatIcon } from '@angular/material/icon';
-import { ExploreComponent } from '../explore/explore.component';
+import { ExploreComponent } from '../../Common_Componants/explore/explore.component';
 
 @Component({
   selector: 'app-navbar',
@@ -16,7 +16,6 @@ export class NavbarComponent {
   isExplore = false
 
   exploreOnFocus(open: boolean) {
-    console.log(this.isExplore);
     this.isExplore = open
   }
 

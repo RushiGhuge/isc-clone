@@ -1,0 +1,86 @@
+<!-- navigation section -->
+<nav class=' sticky top-16 bg-white'>
+    <ul #navButtons  class="flex gap-10 px-8  w-full shadow-md">
+        <li><button class="py-2" (click)="scrollToSection(about, $event)">About</button></li>
+        <li><button class="py-2" (click)="scrollToSection(highlights, $event)">Highlights</button></li>
+        <!-- <li><button class="py-2" (click)="scrollToSection()">Admission</button></li> -->
+        <li><button class="py-2" (click)="scrollToSection(trending, $event)">Courses</button></li>
+        <li><button class="py-2" (click)="scrollToSection(fee, $event)">Fees</button></li>
+        <!-- <li><button class="py-2" (click)="scrollToSection()">Additional Details.</button></li> -->
+    </ul>
+</nav>
+
+
+
+<section class="grid grid-cols-3 w-full p-6 gap-6 bg-slate-200 text-base text-slate-700">
+
+    <div #about class="bg-white rounded-md shadow-md p-6 col-span-2 row-span-2 flex flex-col gap-3">
+        <h1 class="text-sky-500 text-2xl">About</h1>
+
+        <p>Established in 1636, Harvard University is a prestigious university located in Cambridge, Massachusetts. The
+            university is ranked #5 in the QS World University Rankings 2023, and #2 in THE World Rankings 2023. The
+            university's motto is "Veritas" which means "Truth" in Latin.</p>
+        <p>Harvard University offers 50 undergraduate programs and 135 postgraduate programs. Home to 22% of
+            international students, Harvard has a total student population of 22,361. It has over 371,000 alumni spread
+            across the globe. More than 20,000 staff and faculties, 13 schools and institutes, and countless aspiring
+            students have contributed to making Harvard a modern-day giant in the field of education and research! The
+            acceptance rate for Harvard is 4.6%. </p>
+        <p>Harvard is built around an inclusive culture focusing on diversity, inclusion, and equitable learning
+            opportunities. Its network of like-minded individuals who can support each other no matter where they are
+            has helped make the world a much better place to live in.</p>
+
+        <h2 class="text-2xl text-black">Accolades</h2>
+        <p>Harvard University has consistently been ranked among the top universities in the world by various ranking
+            organizations such as QS, THE, and US News and World Rankings. Here are some recent rankings and factors:
+        </p>
+        <ul class="pl-6">
+            <li class="list-disc">Harvard University has been ranked <b>"#5"</b> in <b>"Graduate Employability"</b> by
+                <b>"QS World
+                    Rankings 2023"</b>
+            </li>
+            <li class="list-disc">It is also ranked <b>"#1"</b> in US Rankings by <b>THE World Rankings 2023</b></li>
+            <li class="list-disc">The University is also ranked <b>"#1"</b> in <b>"Best Global Universities"</b> by
+                <b>"US News and World
+                    Reports"</b>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="bg-white rounded-md shadow-md p-6 flex flex-col gap-3">
+        <h1 class="text-2xl">Confused which university to choose?</h1>
+        <p class="text-slate-600">Use our recommendation engine to analyze your profile and recommend the most desirable
+            programs that fit you.</p>
+        <button class="bg-sky-400 p-2 rounded-md text-white">Get Recommendation</button>
+    </div>
+
+    <div class="bg-white rounded-md shadow-md p-6 ">
+       <app-similar-university></app-similar-university>
+    </div>
+
+    <div #highlights class="bg-white rounded-md shadow-md p-6 flex flex-col gap-4 col-span-2">
+        <app-highlights></app-highlights>
+    </div>
+
+
+    <div class="bg-white rounded-md shadow-md p-6 flex flex-col gap-3 ">
+        <app-quick-poll></app-quick-poll>
+    </div>
+
+    <div class="bg-indigo-950 text-white rounded-md shadow-md p-6 col-span-2 flex justify-between">
+        <h1 class="text-xl">
+            Get help with the admission process from experts
+        </h1>
+        <button class="bg-sky-400 p-2 rounded-lg px-6">Talk To Our Counsellors</button>
+    </div>
+
+
+    <div #trending class="bg-white col-span-2 rounded-md shadow-md p-6 w-full flex flex-col gap-5">
+       <app-trending-courses [data]="data"></app-trending-courses>
+    </div>
+
+    <div #fee class="bg-white rounded-md shadow-md col-span-2  p-6 w-full flex  flex-col gap-5 " >
+        <!-- <app-fee-container></app-fee-container> -->
+    </div>
+
+</section>

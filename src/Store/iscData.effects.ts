@@ -22,7 +22,7 @@ export class IscEffects {
                 }
                 else {
                     let data = state.IscData.universityList.filter((ele: any, id: any) => filterStr.includes(ele.country) || filterStr.includes(ele.name))
-                    this.store.dispatch(addFilteredData({ value: data }))
+                    this.store.dispatch(addFilteredData({ value: data }))   
                 }
             }),
 

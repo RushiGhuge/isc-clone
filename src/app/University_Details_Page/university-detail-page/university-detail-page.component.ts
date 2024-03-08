@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { UniversityAboutComponent } from '../university-about/university-about.component';
+import { UniversityAboutComponent } from '../university-info/university-about.component';
 import { MatIcon } from '@angular/material/icon';
 import { Location } from '@angular/common';
 
